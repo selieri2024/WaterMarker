@@ -8,6 +8,9 @@ from tkinter.ttk import Combobox
 import cv2
 import numpy as np
 
+if not os.path.exists(os.path.join(os.getcwd(),'watermarks')):
+    os.makedirs(os.path.join(os.getcwd(),'watermarks'))
+
 root = Tk()
 root.geometry('365x195')
 
